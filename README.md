@@ -1,6 +1,6 @@
 # Automated Echo Chamber Detection & Graph RAG Modeling
 
-## 👥 Tim Pengembang
+## Tim Pengembang
 
 | Nama | NRP |
 |------|-----|
