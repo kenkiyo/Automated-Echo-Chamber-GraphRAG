@@ -1,0 +1,17 @@
+# API Keys dan Konfigurasi Rahasia
+.env
+
+# Python Cache & Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# File Sistem Windows/Mac OS
+.DS_Store
+Thumbs.db
