@@ -7,7 +7,12 @@
 | Muhammad Raihan Hassan| 5026231108 |
 | Harya Raditya Handoyo | 5026231176 |
 
+---
 
+## Deliverables
+
+* **GitHub Repository:** [https://github.com/kenkiyo/Automated-Echo-Chamber-GraphRAG](https://github.com/kenkiyo/Automated-Echo-Chamber-GraphRAG)
+* **YouTube Demo:** [LINK VIDEO YOUTUBE KALIAN DISINI]
 ---
 
 ## Latar Belakang & Arsitektur
@@ -117,11 +122,6 @@ Format output wajib berupa JSON: {"sentiment": "...", "topic": "..."}
 * **Dynamic API Routing:** Pembuatan skrip `cek_openrouter.py` untuk deteksi model aktif secara *real-time* guna mengatasi *Rate Limit Error* (429).
 * **Error Handling:** Implementasi `time.sleep(4.1)` untuk menjaga laju *request* tetap stabil sesuai batasan API gratis.
 * **Security:** Penambahan parameter `allow_dangerous_requests=True` pada `GraphCypherQAChain` untuk integrasi *pipeline* yang lebih dalam.
-
-## Deliverables
-
-* **GitHub Repository:** [https://github.com/kenkiyo/Automated-Echo-Chamber-GraphRAG](https://github.com/kenkiyo/Automated-Echo-Chamber-GraphRAG)
-* **YouTube Demo:** [LINK VIDEO YOUTUBE KALIAN DISINI]
 
 ---
 
