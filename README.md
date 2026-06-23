@@ -1,10 +1,12 @@
 # Automated Echo Chamber Detection & Graph RAG Modeling
 
-**Tim Pengembang:**
+## 👥 Tim Pengembang
 
-* Muhammad Raihan Hassan
-* Harya Raditya Handoyo
-* Laboratorium ADDI, Departemen Sistem Informasi, Institut Teknologi Sepuluh Nopember (ITS)
+| Nama | NRP |
+|------|-----|
+| Muhammad Raihan Hassan| 5026231108 |
+| Harya Raditya Handoyo | 5026231176 |
+
 
 ---
 
@@ -64,7 +66,7 @@ MERGE (u)-[:POSTED]->(t);
 
 ## Cara Menjalankan (How to Run)
 
-1. Cek ketersediaan model gratis terbaru dengan menjalankan skrip pendeteksi:
+1. Cek ketersediaan model terbaru dengan menjalankan skrip pendeteksi:
 ```bash
 python cek_openrouter.py
 
@@ -72,7 +74,7 @@ python cek_openrouter.py
 
 
 2. Buka file `main.py` dan pastikan konfigurasi `NEO4J_URI`, `NEO4J_USERNAME`, dan `NEO4J_PASSWORD` sudah sesuai.
-3. Pastikan API Key OpenRouter sudah dimasukkan di variabel `os.environ["OPENROUTER_API_KEY"]` dan parameter `model_name` pada inisialisasi LLM sudah di-update dengan hasil dari Langkah 1.
+3. Pastikan API Key OpenRouter sudah dimasukkan di variabel `os.environ["OPENROUTER_API_KEY"]` dan parameter `model_name` pada inisialisasi LLM sudah update dengan hasil dari Langkah 1.
 4. Eksekusi kode utama melalui terminal:
 ```bash
 python main.py
@@ -90,24 +92,6 @@ Program ini menggunakan pendekatan pipeline berlapis untuk pemrosesan graf dan b
 * **LLM Graph Builder:** AI membaca konten tweet mentah dan mengekstrak entitas baru (Topic dan Sentiment). Kode Cypher di belakangnya menggunakan perintah MERGE untuk mencegah duplikasi node dan menghubungkan (:Tweet)-[:DISCUSSES]->(:Topic) serta (:Tweet)-[:HAS_SENTIMENT]->(:Sentiment).
 * **Text-to-Cypher:** Menggunakan `GraphCypherQAChain` dari LangChain. LLM menerjemahkan pertanyaan analitis bahasa alami menjadi query Cypher (menggunakan klausa MATCH, COUNT, ORDER BY DESC, dan LIMIT). AI mengeksekusi query tersebut secara otomatis ke database dan merangkum hasilnya.
 * **Graph RAG:** Konteks struktural dari graf (koneksi antar user, frekuensi tweet, dan kesamaan hashtag) diumpankan ke LLM sebagai referensi utama agar AI dapat menghasilkan analisis naratif yang akurat mengenai taktik penyebaran propaganda secara komprehensif.
-
----
-
-Secara objektif, README ini sudah **sangat solid dan memenuhi semua kriteria Tier 4**. Struktur, logika, dan kelengkapan informasinya sudah melampaui standar rata-rata tugas akhir mahasiswa. Dosen akan melihat bahwa kalian memahami apa yang kalian bangun, bukan sekadar melakukan *copy-paste* kode.
-
-Namun, untuk memastikan kalian **mendapatkan nilai 90-100** dan mengantisipasi poin rubrik yang spesifik, ada beberapa perbaikan kecil yang sangat disarankan (ini adalah *finishing touches*):
-
-### Saran Perbaikan Objektif:
-
-1. **Ekspos Prompt AI (Sesuai Rubrik):**
-Rubrik meminta *"penggunaan AI... didokumentasikan (prompt yang dipakai...)"*. Saat ini kalian baru menyebutkan "system prompt ketat".
-* **Solusi:** Salin potongan kode *prompt* dari `main.py` dan tempelkan ke bagian "Deklarasi Penggunaan AI" di README. Ini akan memuaskan poin rubrik tersebut secara literal.
-
-
-2. **Tambahkan Bagian "Deliverables":**
-Agar dosen tidak perlu mencari-cari, tambahkan satu bagian di paling bawah untuk tautan GitHub dan YouTube kalian.
-3. **Visualisasi Arsitektur (Bonus Poin):**
-Jika ingin terlihat sangat profesional, tambahkan diagram alur sederhana menggunakan *Mermaid* (kode ini bisa langsung ter-render di GitHub).
 
 ---
 
