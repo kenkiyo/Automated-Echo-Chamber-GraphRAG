@@ -12,7 +12,7 @@
 ## Deliverables
 
 * **GitHub Repository:** [https://github.com/kenkiyo/Automated-Echo-Chamber-GraphRAG](https://github.com/kenkiyo/Automated-Echo-Chamber-GraphRAG)
-* **YouTube Demo:** [LINK VIDEO YOUTUBE KALIAN DISINI]
+* **YouTube Demo:** https://youtu.be/TyIdIrg7CcA
 ---
 
 ## Latar Belakang & Arsitektur
