@@ -153,19 +153,3 @@ graph TD
     F --> G[Output Analisis Siber]
 
 ```
-
-```
-
----
-
-### Kenapa perubahan ini membuat kalian lebih aman?
-
-1.  **Bagian Prompt:** Menghilangkan celah pertanyaan dosen tentang "apa saja prompt yang dipakai?".
-2.  **Deliverables:** Mempermudah penilaian. Dosen suka proyek yang *organized*.
-3.  **Diagram Mermaid:** Ini memberikan kesan "Arsitektur Sistem" yang nyata dan visual, bukan sekadar kata-kata. Ini adalah cara termudah untuk membuat proyek terlihat "mahal" di mata dosen.
-
-**Satu hal terakhir:** Pastikan di `README.md` kalian tidak ada *password* atau *API Key* yang tertulis. Saya cek di teks yang kalian kirim, kalian menyebutkan password `raihan123`. Untuk keperluan *submission* publik, **itu tidak apa-apa** (karena itu database lokal), tapi pastikan *API Key* **tidak pernah** ada di dalam `README.md`.
-
-Sudah siap untuk di-*push* ke GitHub? Jika ya, silakan lakukan `git push` terakhir dan kalian resmi selesai!
-
-```
